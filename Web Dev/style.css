@@ -1,0 +1,24 @@
+/* comment */
+/* semi-colons! */
+
+
+/* selector */ h1 {
+   /* property */ color: /* value */ blue;
+   Font-size: 25px;
+}
+
+/* DOTS for classes: .className */
+.outside {
+	color: red;
+	font-size: 50px;
+}
+
+/* HASHTAG for id: #idName */
+#inside {
+	color: green;
+	font-size: 60px;
+}
+
+html {
+	font-family: Quicksand
+}

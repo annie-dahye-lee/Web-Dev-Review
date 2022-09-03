@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+<html> <!-- root tag: contains everything -->
+<head> <!-- contains metadata: invisible elements -->
+	<title>Reviewing My Shit</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body> <!-- visible elements -->
+	<!-- headers decreases in size as count increases -->
+	<h1>Big Header</h1>
+	<p> This is a paragraph blah blah blah. I will finish this entire course tonight.
+	<h2>Medium Header</h2>
+	<h3>Small Header</h3>
+	<br>
+
+	<h1> Lists </h1>
+	<!-- <ul>: unordered list (bullet points)
+		 <ol>: ordered list (numbered)
+		 <li>: list elements
+	-->
+	<h2>Unordered lists</h2>
+	<ul>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ul>
+	<h2>Ordered lists</h2>
+	<ol>
+		<li>item 1</li>
+		<li>item 2</li>
+		<li>item 3</li>
+	</ol>
+
+	<h2>Buttons</h2>
+	<p>totally not sketch</p>
+	<button>CLICK ME!</button>
+
+	<h2>Tables</h2>
+	<!-- <table></table>: specifies start/end of table 
+		 <tbody>: encases all table content
+		 <tr>: table ROW
+		 <th>: bolded table header
+		 <td>: table data element
+	-->
+	<table>
+	<tbody>
+	<tr>
+		<th>Column 1</th>
+		<th>Column 2</th>
+	</tr>
+	<tr>
+		<td>Row 1 Col 1</td>
+		<td>Row 1 Col 2</td>
+	</tr>
+	<tr>
+		<td>Row 2 Col 1</td>
+		<td>Row 2 Col 2</td>
+	</tbody>
+	</table>
+
+<h2>Attributes</h2>
+<ul>
+	<li>attributes give additional info to elements</li>
+	<li>attributes are inside of the tags</li>
+	<h4>Examples: </h4>
+	<li> 'a' anchor tag has by href attribute (url) </li>
+	<li> img tag has src attribute (specifies img name), and width & height attributes <!-- <img src="img_girl.jpg" width="500" height="600"> -->
+</ul>
+
+<h2>Images</h2>
+<!--img must be in same folder as html file-->
+<img src = "pfp.png" width = "200" height = "200">
+
+<h2>Links</h2>
+<!-- <a> anchor tag: defines hyperlink (text displayed that leads to site) followed by 
+href attribute: url -->
+<!-- href attribute inside <a> tag -->
+<a href = "https://www.google.com"> Google </a>
+
+
+<h2>Forms</h2>
+<!-- 
+Display Text <input type="text" name = "title"> : single-line text input field
+
+<input type="radio" name = "title"> Display Text: Displays a radio button (for selecting one of many choices)
+
+<input type="submit" value = "Submit">: Displays submit button
+
+required attribute: element with the same name must be filled to submit form
+
+add line breaks <br> for cleaner formatting
+-->
+<form>
+	First Name: <br> <input type = "text" name = "First Name" value = "Annie"> <br>
+	Last Name <br> <input type = "text" name = "Last Name"> <br>
+	<br> Favourite Color <br>
+	<input type = "radio" name = "FaveColour" checked = "false" required = "true"> Red
+	<input type = "radio" name = "FaveColour">Blue 
+	<br> <input type = "submit" value = "Submit">
+</form>
+
+<!-- not going to go in depth of how input is received, but understand that front-end and back-end of web development work together very often -->
+
+<h2>Block-level Elements</h2>
+<!-- takes up as much space as possible -->
+<!-- <div> tag: groups html elements like a container -->
+<div style = "border: 5px solid red">What's up Shawties</div>
+<p>The DIV element is a block element, and will always start on a new line and take up the full width available (stretches out to the left and right as far as it can).</p>
+
+<h2>Inline Elements</h2>
+<!-- takes only as much space necessary -->
+<!-- <span> tag: text container -->
+<p>This is an inline span <span style="border: 1px solid black">Hello  World</span> element inside a paragraph.</p>
+
+<span style = "border: 3px solid blue">Sup</span>
+<h1>My<span style = "color:red"> Important</span> Heading </h1>
+
+<br>
+<br>
+
+<div style="background-color:pink;color:black;padding:25px;">
+  	<h2>Div tag Example</h2>
+  	<p>This is an example that shows how to use div tags.</p>
+  	<p>Placeholder text for demonstration purposes. Note that 
+    html websites usually comprise of many groups of div tags
+    that can be embedded inside other div tags. You can think
+    of them as sections of a page (although not quite because
+    There actually is an article tag for that purpose!)
+</p>
+</div> 
+
+<h2>Sections</h2>
+<!--defines a section in a document, such as chapters, footers, headers, etc -->
+
+<section>
+    <h1>Introduction</h1>
+    <p>People have been catching fish for food since before recorded history…</p>
+</section>
+
+<section>
+    <h1>Equipment</h1>
+    <p>The first thing you’ll need is a fishing rod or pole that you find comfortable and is strong enough for the kind of fish you’re expecting to land…</p>
+</section>
+
+<h2>Specificity</h2> 
+	<!-- adding classes & ids for specificity & precision <-->
+	<!-- TAG OVERRIDING ORDER:
+		INLINE STYLE > IDs > CLASSES -->
+	<h3 class= "outside">Hello World</h3>
+	<h3 class= "outside" id= "inside">Another h1</h3>
+	<h3 class= "outside" id= "inside" style="color:pink; Font-size: 25px">yo</h3>
+
+<h2>Inline vs Blocks</h2>
+
